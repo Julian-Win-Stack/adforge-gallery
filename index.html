@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="22 product links given to AdForge on Oct 20, 2026, the ads it made, and a hand grade for each.">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img,video{max-width:100%}[hidden]{display:none!important}</style>
+<title>AdForge Round 6 Ads</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a contact sheet. One row per ad: the vertical ad on the left, its script as a timed shot list on the right. */
+:root {
+  --bg: #f4f5f3; --surface: #ffffff; --ink: #16181b; --muted: #5d636b; --line: #dadcd8;
+  --accent: #2c46c9; --accent-soft: #e5e9fb; --pass: #1f6b3a; --pass-soft: #def0e3; --fail: #a3261c; --fail-soft: #f8e0dd; --hole: #8a4a0f; --hole-soft: #f8ecdf;
+  --display: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111316; --surface: #1a1d21; --ink: #eceef0; --muted: #9aa1aa; --line: #2c3036;
+  --accent: #8ea0ff; --accent-soft: #232a4a; --pass: #7fd39a; --pass-soft: #1b3324; --fail: #ff9a8f; --fail-soft: #3a1f1c; --hole: #f0b47a; --hole-soft: #2e2218; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #111316; --surface: #1a1d21; --ink: #eceef0; --muted: #9aa1aa; --line: #2c3036;
+  --accent: #8ea0ff; --accent-soft: #232a4a; --pass: #7fd39a; --pass-soft: #1b3324; --fail: #ff9a8f; --fail-soft: #3a1f1c; --hole: #f0b47a; --hole-soft: #2e2218; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font: 15px/1.55 var(--body); }
+.wrap { max-width: 1080px; margin: 0 auto; padding-block: 40px 80px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 40px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.05; letter-spacing: -0.01em; }
+h2 { font-size: 24px; line-height: 1.15; }
+h3 { font-size: 15px; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.label { font: 500 11px/1.3 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+header { display: grid; gap: 14px; max-width: 68ch; }
+header p { margin: 0; color: var(--muted); }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 22px; font: 500 13px/1.4 var(--mono); color: var(--ink); }
+.stats span b { font-weight: 500; color: var(--accent); }
+.holes { display: grid; gap: 8px; padding: 16px 18px; border-radius: 10px; background: var(--hole-soft); color: var(--ink); }
+.holes ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.holes .label { color: var(--hole); }
+nav.index { display: flex; flex-wrap: wrap; gap: 6px; }
+nav.index a { font: 500 12px/1 var(--mono); padding: 7px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); text-decoration: none; background: var(--surface); }
+nav.index a:hover { border-color: var(--accent); }
+.set-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; border-top: 1px solid var(--line); padding-top: 16px; }
+.set-title p { margin: 0; color: var(--muted); }
+.ad { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 28px; align-items: start; scroll-margin-top: 16px; }
+.player { display: grid; gap: 8px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); }
+video { width: 100%; max-width: 100%; aspect-ratio: 9 / 16; background: #000; border-radius: 8px; display: block; }
+.versions { display: flex; gap: 6px; flex-wrap: wrap; }
+.versions button, .scene button { font: inherit; cursor: pointer; }
+.versions button { font: 500 12px/1 var(--mono); padding: 6px 9px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.versions button[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
+.info { display: grid; gap: 14px; min-width: 0; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; }
+.meta a { overflow-wrap: anywhere; font-size: 13px; }
+.chip.late { background: var(--hole-soft); color: var(--hole); }
+.chip { font: 500 11px/1 var(--mono); padding: 5px 7px; border-radius: 4px; background: var(--accent-soft); color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; }
+ol.scenes { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid var(--line); }
+.scene button { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; width: 100%; text-align: left; padding: 10px 6px; background: none; border: 0; border-bottom: 1px solid var(--line); color: var(--ink); }
+.scene button:hover { background: var(--surface); }
+.scene.now button { background: var(--accent-soft); }
+.tc { font: 400 12px/1.6 var(--mono); color: var(--muted); display: grid; gap: 2px; }
+.tc i { font-style: normal; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; }
+.line { min-width: 0; }
+.rule { display: grid; gap: 6px; padding-left: 14px; border-left: 3px solid var(--accent); }
+.rule p { margin: 0; color: var(--ink); max-width: 68ch; }
+.grade { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; }
+.pill { font: 500 12px/1 var(--mono); padding: 6px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.06em; }
+.pill.pass { background: var(--pass-soft); color: var(--pass); }
+.pill.fail { background: var(--fail-soft); color: var(--fail); }
+.pill.none { background: var(--line); color: var(--muted); }
+.words { color: var(--muted); font-size: 13px; font-style: italic; min-width: 0; }
+.line .words { display: block; margin-top: 4px; }
+.notes { display: grid; gap: 14px; padding: 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.note { display: grid; gap: 10px; }
+.note blockquote { margin: 0; padding-left: 12px; border-left: 3px solid var(--accent); }
+.pair { display: grid; grid-template-columns: repeat(2, minmax(0, 200px)); gap: 12px; }
+.pair figure { margin: 0; display: grid; gap: 4px; }
+.pair figcaption { font: 500 11px/1.3 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.unchanged { margin: 0; color: var(--muted); font-size: 13px; }
+footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+@media (max-width: 720px) {
+  .ad { grid-template-columns: minmax(0, 1fr); }
+  .player { position: static; max-width: 320px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="label">AdForge · Round 6 · Oct 20, 2026</span>
+    <h1 id="headline"></h1>
+    <p id="intro"></p>
+    <div class="stats" id="stats"></div>
+    <div class="rule">
+      <span class="label">What a pass means</span>
+      <p id="rule-text"></p>
+    </div>
+  </header>
+  <section class="holes" id="holes" aria-labelledby="holes-title"></section>
+  <nav class="index" id="index" aria-label="Jump to an ad"></nav>
+  <main id="ads" style="display:grid; gap:40px"></main>
+  <footer>Every ad and clip here is the original file the app made, with no compression or edits. Code and write-up: <a href="https://github.com/Julian-Win-Stack/adforge#readme" target="_blank" rel="noopener">github.com/Julian-Win-Stack/adforge</a>.</footer>
+</div>
+
+<script>
+const DATA = [{"key": "r1-glow-recipe", "product": "Watermelon Glow Niacinamide Dew Drops", "url": "https://www.glowrecipe.com/products/watermelon-glow-niacinamide-dew-drops", "set": "rerun", "made": true, "ads": [{"version": 2, "file": "ad-v2.mp4", "seconds": 26.14}], "scenes": [{"n": 1, "line": "Dull skin? This multitasking serum works through every step of your routine.", "broll": false, "start": 0.0, "end": 4.42, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Watermelon Glow Niacinamide Dew Drops is your AM and PM glow-boosting serum.", "broll": false, "start": 4.42, "end": 10.12, "kept_file": "scene2-v4.mp4"}, {"n": 3, "line": "Before makeup, use one to two pumps as a gripping, glowy primer.", "broll": false, "start": 10.12, "end": 14.12, "kept_file": "scene3-v4.mp4"}, {"n": 4, "line": "Over makeup, gently pat a drop on high points for a customizable dewy finish.", "broll": false, "start": 14.12, "end": 18.84, "kept_file": "scene4-v4.mp4"}, {"n": 5, "line": "Get the full-size Watermelon Glow Niacinamide Dew Drops now for $36 and bring glow to every step of your routine.", "broll": false, "start": 18.84, "end": 26.14, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "fail", "note": "all talking, don’t know why"}}, {"key": "r3-olipop", "product": "Vintage Cola", "url": "https://drinkolipop.com/products/vintage-cola", "set": "rerun", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 22.68}], "scenes": [{"n": 1, "line": "Your classic cola just got a nine-gram fiber remix.", "broll": false, "start": 0.0, "end": 3.38, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Keep it refrigerated, so every can is ready to chill whenever you are.", "broll": true, "start": 3.38, "end": 8.59, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "Pour Vintage Cola over ice for nine grams of fiber per can.", "broll": true, "start": 8.59, "end": 13.79, "kept_file": "scene3-v2.mp4"}, {"n": 4, "line": "Every sip brings bright citrus, warm caramel, smooth vanilla, and cinnamon.", "broll": true, "start": 13.79, "end": 20.4, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get the 12-pack now for $35.99 while it’s in stock.", "broll": false, "start": 20.4, "end": 22.68, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": ""}}, {"key": "r7-rothys", "product": "The Point II", "url": "https://rothys.com/products/womens-pointed-toe-flat-tan-woven", "set": "rerun", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 22.66}], "scenes": [{"n": 1, "line": "Pointed flats can bring sleek style and cushion-like comfort together.", "broll": false, "start": 0.0, "end": 3.68, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "The In Love Insole cushions every step from heel to toe.", "broll": false, "start": 3.68, "end": 6.98, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "Added elastic gently expands and contracts, stretching and moving with you.", "broll": true, "start": 6.98, "end": 12.19, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "The airy woven knit and refined pointed shape create a sleek silhouette.", "broll": true, "start": 12.19, "end": 17.39, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "The Point II is on sale for $109, down from $125—get yours now.", "broll": false, "start": 17.39, "end": 22.66, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": ""}}, {"key": "r11-native-pet", "product": "Pumpkin Powder", "url": "https://nativepet.com/products/pumpkin-for-dogs", "set": "rerun", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 23.86}], "scenes": [{"n": 1, "line": "Occasional loose stools? Daily fiber can help support healthy, normal stool quality.", "broll": false, "start": 0.0, "end": 4.72, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Pumpkin Powder supports healthy stool quality and helps firm occasional loose stools.", "broll": false, "start": 4.72, "end": 9.02, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "Sprinkle the fine, sweet pumpkin powder over food once daily to coat every bite.", "broll": true, "start": 9.02, "end": 14.23, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "It’s formulated with board-certified veterinarians and rigorously tested for efficacy.", "broll": false, "start": 14.23, "end": 18.76, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get 30 scoops for $24.99 now, backed by a 30-day guarantee.", "broll": false, "start": 18.76, "end": 23.86, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": "Nothing broke, but not a great ad."}}, {"key": "r12b-cocolab", "product": "Cocofloss", "url": "https://cocolab.com/products/frosty-peppermint-dental-floss", "set": "rerun", "made": true, "ads": [{"version": 2, "file": "ad-v2.mp4", "seconds": 18.54}], "scenes": [{"n": 1, "line": "Your toothbrush can't reach 35% of your teeth's surfaces.", "broll": false, "start": 0.0, "end": 3.34, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Most of those missed surfaces are between your teeth.", "broll": false, "start": 3.34, "end": 5.76, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "Floss is vital to your oral care over a lifetime.", "broll": false, "start": 5.76, "end": 8.66, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "Cocofloss has 500-plus woven fibers that compress to fit between your teeth.", "broll": true, "start": 8.66, "end": 13.87, "kept_file": "scene4-v4.mp4"}, {"n": 5, "line": "It removes four times more plaque than a leading floss.", "broll": false, "start": 13.87, "end": 16.48, "kept_file": "scene5-v1.mp4"}, {"n": 6, "line": "Get Cocofloss now for ten dollars.", "broll": false, "start": 16.48, "end": 18.54, "kept_file": "scene6-v1.mp4"}], "notes": [], "grade": {"grade": "fail", "note": ""}}, {"key": "r13-blueland", "product": "The Coast We Keep Hand Soap Set", "url": "https://blueland.com/products/the-coast-we-keep-hand-soap-set", "set": "rerun", "made": false, "ads": [], "scenes": [], "notes": []}, {"key": "r14-loop", "product": "Loop Experience 2", "url": "https://www.loopearplugs.com/products/experience", "set": "rerun", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 24.94}], "scenes": [{"n": 1, "line": "Love live music, but not the damaging noise that comes with it?", "broll": false, "start": 0.0, "end": 3.5, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Loop Experience 2 filters noise by 17 dB, keeping music clear but at a safer volume.", "broll": false, "start": 3.5, "end": 10.44, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "Four upgraded ear-tip sizes help you find a secure, comfortable fit, even in smaller ears.", "broll": false, "start": 10.44, "end": 16.2, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "Its bold, sleek design stays put no matter how much you dance or move.", "broll": true, "start": 16.2, "end": 21.41, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get Loop Experience 2 now for $29.95.", "broll": false, "start": 21.41, "end": 24.94, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": ""}}, {"key": "01-peace-out", "product": "Pore Refining Strips", "url": "https://peaceoutskincare.com/products/pore-refining-strips", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 32.14}], "scenes": [{"n": 1, "line": "Clogged pores and blackheads don't need harsh stripping.", "broll": false, "start": 0.0, "end": 3.1, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "There's buildup deep within clogged pores, plus blackheads and debris.", "broll": false, "start": 3.1, "end": 7.14, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "Tackling blackheads shouldn't mean harsh tugging or a harsh stripping feel.", "broll": false, "start": 7.14, "end": 11.12, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "Apply Willow Bark-powered Pore Refining Strips to a clean, dry nose or chin.", "broll": true, "start": 11.12, "end": 17.73, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "After five to ten minutes, gently remove the strip with no harsh tug required.", "broll": true, "start": 17.73, "end": 24.33, "kept_file": "scene5-v2.mp4"}, {"n": 6, "line": "The tool sweeps away blackheads and debris for visibly clearer, smoother, more refined-looking skin.", "broll": false, "start": 24.33, "end": 27.86, "kept_file": "scene6-v1.mp4"}, {"n": 7, "line": "Get Pore Refining Strips now for nineteen dollars, with free shipping.", "broll": false, "start": 27.86, "end": 32.14, "kept_file": "scene7-v1.mp4"}], "notes": [], "late": true}, {"key": "02-kravebeauty", "product": "Matcha Hemp Hydrating Cleanser", "url": "https://kravebeauty.com/products/matcha-hemp-hydrating-cleanser", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 24.56}, {"version": 2, "file": "ad-v2.mp4", "seconds": 24.56}], "scenes": [{"n": 1, "line": "Does cleansing leave your skin with that dry, tight after-feel?", "broll": false, "start": 0.0, "end": 3.06, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Grime needs removing, but stripping away the natural lipids and oils your skin needs isn't the answer.", "broll": false, "start": 3.06, "end": 8.26, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "Gently massage the cleanser over wet skin with your fingertips for your daily cleanse.", "broll": true, "start": 8.26, "end": 13.47, "kept_file": "scene3-v2.mp4"}, {"n": 4, "line": "It effectively removes grime, leaving skin feeling clean and soft while supporting a healthy skin barrier.", "broll": false, "start": 13.47, "end": 19.06, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get one 120-milliliter pack of Matcha Hemp Hydrating Cleanser for sixteen dollars now.", "broll": false, "start": 19.06, "end": 24.56, "kept_file": "scene5-v1.mp4"}], "notes": [{"scene": 3, "text": "hey. the faucet should be on the on the opposite site.", "before_file": "scene3-v1.mp4", "after_file": "scene3-v2.mp4", "before_words": "the fauset is being reversed. but I changed with the notes in the app and it worked and passed my bar"}], "grade": {"grade": "pass", "note": ""}}, {"key": "03-beautyblender", "product": "Beautyblender Original", "url": "https://beautyblender.com/products/beautyblender-original", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 18.26}], "scenes": [{"n": 1, "line": "Streaky foundation? Your finish should look seamless and skin-like.", "broll": false, "start": 0.0, "end": 3.44, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Bounce the Beautyblender Original across your face with a gentle motion to apply foundation evenly.", "broll": false, "start": 3.44, "end": 8.44, "kept_file": "scene2-v5.mp4"}, {"n": 3, "line": "Wet the sponge, then squeeze out excess water before applying makeup.", "broll": true, "start": 8.44, "end": 13.65, "kept_file": "scene3-v2.mp4"}, {"n": 4, "line": "It’s also a 17-time Allure Best of Beauty award winner.", "broll": false, "start": 13.65, "end": 15.82, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get the Beautyblender Original for twenty dollars now.", "broll": false, "start": 15.82, "end": 18.26, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": ""}}, {"key": "04-wet-brush", "product": "Original Detangler", "url": "https://wetbrush.com/products/original-detangler-frost-black", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 28.8}], "scenes": [{"n": 1, "line": "Brushing through tangles can mean pain and damaged strands—but it doesn’t have to.", "broll": false, "start": 0.0, "end": 4.54, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Tangles can make brushing painful and put your strands at risk of damage.", "broll": true, "start": 4.54, "end": 9.75, "kept_file": "scene2-v1.mp4", "words": "Yes, but this pass because this is doing nothing. It's just showing a hair, does it? And then shaking the hair, does it? It's not doing anything. This is pointless.", "clip_grade": "pass"}, {"n": 3, "line": "Original Detangler uses IntelliFlex bristles to glide gently through knots and tangles.", "broll": true, "start": 9.75, "end": 16.35, "kept_file": "scene3-v2.mp4", "words": "This feel in my opinion, this doesn't look natural. I mean, yeah, that's that is how the brush is used and it is actually improved from the first clip, but that is so AI like.", "clip_grade": "fail"}, {"n": 4, "line": "It works on wet hair while staying ultra-soft on hair and scalp.", "broll": true, "start": 16.35, "end": 21.56, "kept_file": "scene4-v2.mp4"}, {"n": 5, "line": "It glides through dry hair with ease and up to 55% less breakage.", "broll": true, "start": 21.56, "end": 26.77, "kept_file": "scene5-v1.mp4", "words": "The motion, no, how the brushes actually go past the hair and how they are actually shown. It's not natural. It breaks. It doesn't break the physics, but it looks so AI gener- AI like, and it's not how real life work.", "clip_grade": "fail"}, {"n": 6, "line": "Get the Original Detangler now for $10.99 and make detangling gentler.", "broll": false, "start": 26.77, "end": 28.8, "kept_file": "scene6-v1.mp4"}], "notes": [], "grade": {"grade": "fail", "note": ""}}, {"key": "05-dreamfarm", "product": "Garject", "url": "https://us.dreamfarm.com/garject/", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 19.92}], "scenes": [{"n": 1, "line": "Stop peeling garlic—this press handles multiple unpeeled cloves at once.", "broll": false, "start": 0.0, "end": 4.08, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Garject easily and completely presses multiple unpeeled garlic cloves at once.", "broll": true, "start": 4.08, "end": 9.29, "kept_file": "scene2-v4.mp4"}, {"n": 3, "line": "Push the peel eject button to shoot the garlic peel into the bin.", "broll": false, "start": 9.29, "end": 12.36, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "Open Garject, and its spring-loaded scraper clears every bit into your meal.", "broll": false, "start": 12.36, "end": 16.68, "kept_file": "scene4-v2.mp4"}, {"n": 5, "line": "Get Garject now for $49.99.", "broll": false, "start": 16.68, "end": 19.92, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": ""}}, {"key": "06-zulay", "product": "LUX Rechargeable Milk Frother", "url": "https://www.zulaykitchen.com/products/rechargeable-milk-frother-lux", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 23.68}], "scenes": [{"n": 1, "line": "Rich, creamy foam in seconds, with just one touch.", "broll": false, "start": 0.0, "end": 3.22, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "The LUX Rechargeable Milk Frother creates rich, creamy foam with one touch.", "broll": true, "start": 3.22, "end": 9.83, "kept_file": "scene2-v2.mp4"}, {"n": 3, "line": "Its waterproof design rinses under running water for quick, easy cleaning.", "broll": false, "start": 9.83, "end": 12.58, "kept_file": "scene3-v3.mp4"}, {"n": 4, "line": "Double-press for a more powerful mix that creates thicker foam.", "broll": true, "start": 12.58, "end": 17.79, "kept_file": "scene4-v2.mp4"}, {"n": 5, "line": "Get the LUX Rechargeable Milk Frother now for $29.99, down from $49.99.", "broll": false, "start": 17.79, "end": 23.68, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": ""}}, {"key": "07-gymreapers", "product": "Premium Lifting Straps", "url": "https://www.gymreapers.com/products/lifting-straps-premium-padded-weightlifting-straps-brown", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 23.8}], "scenes": [{"n": 1, "line": "Grip giving out during heavy deadlifts or rows?", "broll": false, "start": 0.0, "end": 2.58, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Use lifting straps to eliminate grip-strength fatigue during pulling movements.", "broll": false, "start": 2.58, "end": 6.72, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "Heavy training can mean discomfort, pain, slipping, or tugging when your grip needs support.", "broll": false, "start": 6.72, "end": 11.86, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "Premium Lifting Straps use durable cotton and Neoprene padding to support your wrists and improve grip strength.", "broll": false, "start": 11.86, "end": 17.58, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get Premium Lifting Straps now for $14.99, backed by a lifetime replacement guarantee.", "broll": false, "start": 17.58, "end": 23.8, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "fail", "note": "no b roll. all talking. i found that this one had scraping problem for some reasons"}}, {"key": "08-dexas", "product": "Dexas MudBuster", "url": "https://www.amazon.com/dp/B084GYFS54", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 22.14}], "scenes": [{"n": 1, "line": "Muddy paws don’t belong on your floors, carpets, or furniture.", "broll": false, "start": 0.0, "end": 3.32, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "After walks or rainy play, dirt and debris can get tracked inside.", "broll": true, "start": 3.32, "end": 8.53, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "With water and your dog's paw inside, twist the MudBuster a few times.", "broll": true, "start": 8.53, "end": 13.73, "kept_file": "scene3-v2.mp4"}, {"n": 4, "line": "Afterward, it’s easy to rinse clean and built for repeated everyday use.", "broll": false, "start": 13.73, "end": 16.68, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get the Dexas MudBuster now for $11.49 and stop muddy paws at the door.", "broll": false, "start": 16.68, "end": 22.14, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": ""}}, {"key": "09-ezpz", "product": "Mini Mat", "url": "https://ezpzfun.com/products/mini-mat", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 21.76}], "scenes": [{"n": 1, "line": "Tipped bowls and plates? A stable base can help reduce both.", "broll": false, "start": 0.0, "end": 3.88, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "The Mini Mat combines a placemat and plate in one compact design.", "broll": true, "start": 3.88, "end": 9.09, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "Its suction feature decreases tipped bowls and plates while promoting self-feeding.", "broll": false, "start": 9.09, "end": 12.9, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "The Mini Mat has a 4.9 rating from 2,522 customer reviews.", "broll": false, "start": 12.9, "end": 18.12, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get the Mini Mat now for $22.49.", "broll": false, "start": 18.12, "end": 21.76, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": ""}}, {"key": "10-logitech", "product": "Pebble Mouse 2 M350s", "url": "https://www.logitech.com/en-us/shop/p/pebble-2-m350s-wireless-mouse.910-006985", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 27.34}], "scenes": [{"n": 1, "line": "What if every click came with 90% less noise?", "broll": false, "start": 0.0, "end": 3.06, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Its lightweight, portable design means it slips into your bag, whenever, wherever you go.", "broll": true, "start": 3.06, "end": 9.67, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "Its minimalist, slim, round design adds colorful personality to any setup.", "broll": true, "start": 9.67, "end": 16.27, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "Silent Touch Technology removes 90% of click noise, keeping distractions low.", "broll": false, "start": 16.27, "end": 18.96, "kept_file": "scene4-v2.mp4"}, {"n": 5, "line": "At $24.99, get the limited-edition Pebble Mouse 2 M350s now, while supplies last.", "broll": false, "start": 18.96, "end": 27.34, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": ""}}, {"key": "11-chipolo", "product": "Chipolo POP", "url": "https://chipolo.net/en-us/products/chipolo-pop", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 20.3}], "scenes": [{"n": 1, "line": "Still wasting time searching for your keys, backpack, or luggage?", "broll": false, "start": 0.0, "end": 2.92, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Chipolo POP uses Apple Find My or Google’s Find Hub to locate missing items.", "broll": true, "start": 2.92, "end": 8.13, "kept_file": "scene2-v1.mp4", "words": "but kind of pointless tho. the b roll and what it shows is. this proves nothing. just showing the map", "clip_grade": "pass"}, {"n": 3, "line": "Attach Chipolo POP directly to your backpack, keys, luggage, and more—no accessories needed.", "broll": true, "start": 8.13, "end": 14.73, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "With Call Your Phone, your phone rings so you can find it in seconds.", "broll": false, "start": 14.73, "end": 16.42, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get Chipolo POP now for $29 and stop wasting time searching.", "broll": false, "start": 16.42, "end": 20.3, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": ""}}, {"key": "12-legion", "product": "Pulse", "url": "https://legionathletics.com/products/supplements/pulse-pre-workout/", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 27.5}], "scenes": [{"n": 1, "line": "You can boost workout energy and focus without jitters or a post-workout crash.", "broll": false, "start": 0.0, "end": 4.32, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "My pre-workout routine starts by mixing Pulse with water before training.", "broll": true, "start": 4.32, "end": 9.53, "kept_file": "scene2-v3.mp4", "words": "the shaking motion is not natural and the same goes for remake 1", "clip_grade": "fail"}, {"n": 3, "line": "I drink Pulse with water 15 to 30 minutes before my workout starts.", "broll": true, "start": 9.53, "end": 14.73, "kept_file": "scene3-v3.mp4", "words": "the judge is correct", "clip_grade": "fail"}, {"n": 4, "line": "Pulse is designed to boost energy and focus, increase strength, and improve muscular endurance.", "broll": false, "start": 14.73, "end": 18.64, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get the 20-serving Pulse tub now for $39.99; your first purchase is covered by a 365-day money-back guarantee.", "broll": false, "start": 18.64, "end": 27.5, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": ""}}, {"key": "13-mudwtr", "product": "Original Starter Kit plus PSL", "url": "https://mudwtr.com/products/original-starter-kit-psl-1", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 21.64}], "scenes": [{"n": 1, "line": "Free US shipping and a free frother come with this starter kit.", "broll": false, "start": 0.0, "end": 3.5, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Choose delivery every two, four, six, eight, or twelve weeks.", "broll": false, "start": 3.5, "end": 8.64, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "With the frother in the mug, mix the drink until it is evenly blended.", "broll": true, "start": 8.64, "end": 13.85, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "Adjust shipments or cancel anytime, with free US shipping included.", "broll": false, "start": 13.85, "end": 17.48, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get the Original Starter Kit plus PSL now for eighty dollars.", "broll": false, "start": 17.48, "end": 21.64, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": ""}}, {"key": "14-force-of-nature", "product": "Force of Nature Starter Kit", "url": "https://www.forceofnatureclean.com/shop/starter-kit/", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 27.06}], "scenes": [{"n": 1, "line": "Why keep separate kitchen, bathroom, glass, floor, and disinfectant cleaners?", "broll": false, "start": 0.0, "end": 5.02, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Force of Nature is an all-in-one cleaner, deodorizer, and EPA-registered disinfectant.", "broll": false, "start": 5.02, "end": 10.84, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "Spray Force of Nature cleaner across a sealed stone countertop.", "broll": true, "start": 10.84, "end": 16.05, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "Each Activator Capsule makes one twelve-ounce bottle of Force of Nature cleaner.", "broll": true, "start": 16.05, "end": 22.65, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get the plastic-bottle Force of Nature Starter Kit for $81 now, backed by the 30-day guarantee.", "broll": false, "start": 22.65, "end": 27.06, "kept_file": "scene5-v1.mp4"}], "notes": [], "grade": {"grade": "pass", "note": "but one talking scene failed. the presenter was holding a different shape of the bottle. i think the starting pic was different. and we cannot fix this in the owner notes as well. since this is talking scene"}}, {"key": "15-pair-of-thieves", "product": "BOWO socks", "url": "https://pairofthieves.com/products/bowo-cushion-ankle-grey-socks-3-pack", "set": "new", "made": true, "ads": [{"version": 1, "file": "ad-v1.mp4", "seconds": 22.28}], "scenes": [{"n": 1, "line": "Still distracted by socks that shift instead of staying put?", "broll": false, "start": 0.0, "end": 3.06, "kept_file": "scene1-v1.mp4"}, {"n": 2, "line": "Designed with four-way stretch and a snug, no-shift fit for distraction-free wear.", "broll": true, "start": 3.06, "end": 9.67, "kept_file": "scene2-v1.mp4"}, {"n": 3, "line": "Cooling, breathable BOWO socks add arch support plus reinforced heel and toe.", "broll": true, "start": 9.67, "end": 16.27, "kept_file": "scene3-v1.mp4"}, {"n": 4, "line": "The snug, no-shift fit stays in place through every steady step.", "broll": true, "start": 16.27, "end": 21.48, "kept_file": "scene4-v1.mp4"}, {"n": 5, "line": "Get the BOWO socks three-pack now for $12.99.", "broll": false, "start": 21.48, "end": 22.28, "kept_file": "scene5-v1.mp4"}], "notes": [], "late": true}];
+const MEDIA = {};
+const BEST = "";
+const PASS_RULE = "I watched the finished ad and nothing broke. No wrong claim, no impossible motion, no invented product side, no scene missing. It does not mean the ad would sell. A few of the passes are persuasive. Most are just correct.";
+
+const el = (tag, attrs = {}, ...kids) => {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "text") n.textContent = v; else if (v !== null && v !== undefined) n.setAttribute(k, v);
+  }
+  for (const k of kids) if (k) n.append(k);
+  return n;
+};
+const src = (key, file) => MEDIA[key + "/" + file] || ("media/" + key + "/" + file);
+const tc = s => { const m = Math.floor(s / 60), r = s - m * 60; return m + ":" + r.toFixed(1).padStart(4, "0"); };
+const video = (key, file) => el("video", { src: src(key, file) + "#t=0.1", controls: "", playsinline: "", preload: "metadata" });
+
+const made = DATA.filter(a => a.made), inRun = made.filter(a => !a.late), late = made.filter(a => a.late), holes = DATA.filter(a => !a.made);
+const newSet = DATA.filter(a => a.set === "new"), reruns = DATA.filter(a => a.set === "rerun");
+document.getElementById("headline").textContent = DATA.length + " product links, " + inRun.length + " ads, graded by hand";
+document.getElementById("intro").textContent =
+  DATA.length + " product links were given to AdForge on Oct 20, 2026, and " + inRun.length + " ads came out in the run" + (late.length ? " (" + late.length + " more were made after it and are marked)" : "") + ". " +
+  "For each one the app read the product page, wrote the script, planned the scenes, drew and filmed them, and cut the ad. Every grade below is mine, by eye. Tap a scene line to jump to it.";
+const stats = document.getElementById("stats");
+const passed = list => list.filter(a => a.grade && a.grade.grade === "pass").length;
+[["new products passed", passed(newSet) + " of " + newSet.length],
+ ["reruns of earlier fails passed", passed(reruns) + " of " + reruns.length]].forEach(([k, v]) =>
+  stats.append(el("span", {}, el("b", { text: v }), " " + k)));
+document.getElementById("rule-text").textContent = PASS_RULE;
+
+const holesBox = document.getElementById("holes");
+if (holes.length) {
+  holesBox.append(el("span", { class: "label", id: "holes-title", text: "No ad made · " + holes.length + " of " + DATA.length }));
+  const ul = el("ul");
+  holes.forEach(a => ul.append(el("li", {}, el("a", { href: a.url, target: "_blank", rel: "noopener", text: a.product }),
+    " (" + (a.set === "new" ? "new product" : "rerun") + "): the picture step rejected every page photo, so no ad was made.")));
+  holesBox.append(ul);
+} else holesBox.hidden = true;
+
+const index = document.getElementById("index");
+made.forEach(a => index.append(el("a", { href: "#" + a.key, text: a.product })));
+
+function gradeBox(a) {
+  if (!a.grade) return el("div", { class: "grade" }, el("span", { class: "pill none", text: "Not graded" }),
+    el("span", { class: "words", text: a.late ? "Made after the run ended, so it counts as a fail." : "" }));
+  return el("div", { class: "grade" }, el("span", { class: "pill " + a.grade.grade, text: a.grade.grade === "pass" ? "Pass" : "Fail" }),
+    a.grade.note ? el("span", { class: "words", text: "“" + a.grade.note + "”" }) : null);
+}
+
+function adBlock(a) {
+  const ads = a.ads.slice().sort((x, y) => x.version - y.version);
+  const latest = ads[ads.length - 1];
+  const player = video(a.key, latest.file);
+  const scenes = el("ol", { class: "scenes" });
+  const rows = a.scenes.map(s => {
+    const b = el("button", { type: "button", "aria-label": "Play scene " + s.n },
+      el("span", { class: "tc" }, el("span", { text: tc(s.start) }), el("i", { text: s.broll ? "B-roll" : "Talking" })),
+      el("span", { class: "line" }, s.line,
+        s.words ? el("span", { class: "words", text: "My grade on this clip: " + s.clip_grade + ". “" + s.words + "”" }) : null));
+    b.addEventListener("click", () => {
+      if (player.dataset.v !== String(latest.version)) setVersion(latest);
+      player.currentTime = s.start + 0.01; player.play().catch(() => {});
+    });
+    const li = el("li", { class: "scene" }, b); scenes.append(li); return [s, li];
+  });
+  player.dataset.v = String(latest.version);
+  player.addEventListener("timeupdate", () => {
+    const live = player.dataset.v === String(latest.version);
+    rows.forEach(([s, li]) => li.classList.toggle("now", live && player.currentTime >= s.start && player.currentTime < s.end));
+  });
+  const vbar = el("div", { class: "versions" });
+  function setVersion(v) {
+    player.src = src(a.key, v.file); player.dataset.v = String(v.version);
+    vbar.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.v === String(v.version))));
+  }
+  if (ads.length > 1) ads.forEach(v => {
+    const b = el("button", { type: "button", "data-v": String(v.version), "aria-pressed": String(v === latest),
+      text: v.version === 1 ? "First cut" : (a.notes && a.notes.length ? "After owner note" : "Re-cut") + " (v" + v.version + ")" });
+    b.addEventListener("click", () => setVersion(v)); vbar.append(b);
+  });
+
+  const info = el("div", { class: "info" },
+    el("div", { class: "meta" }, el("span", { class: "chip", text: a.set === "new" ? "New product" : "Rerun" }),
+      a.late ? el("span", { class: "chip late", text: "Made after the run" }) : null,
+      el("a", { href: a.url, target: "_blank", rel: "noopener", text: a.url.replace(/^https?:\/\/(www\.)?/, "").replace(/[?#].*$/, "") })),
+    el("h2", { text: a.product }),
+    gradeBox(a),
+    el("span", { class: "label", text: a.scenes.length + " scenes · " + latest.seconds.toFixed(1) + " s" }),
+    scenes);
+
+  if (a.notes && a.notes.length) {
+    const box = el("section", { class: "notes" }, el("span", { class: "label", text: "Owner notes" }));
+    a.notes.forEach(n => {
+      const note = el("div", { class: "note" }, el("h3", { text: "Scene " + n.scene }), el("blockquote", { text: n.text }),
+        n.before_words ? el("p", { class: "words", text: "My grade on the first clip: “" + n.before_words + "”" }) : null);
+      if (n.after_file) note.append(el("div", { class: "pair" },
+        el("figure", {}, el("figcaption", { text: "Before" }), video(a.key, n.before_file)),
+        el("figure", {}, el("figcaption", { text: "After" }), video(a.key, n.after_file))));
+      else if (n.unchanged) note.append(el("p", { class: "unchanged", text: n.unchanged }));
+      box.append(note);
+    });
+    info.append(box);
+  }
+  return el("article", { class: "ad", id: a.key }, el("div", { class: "player" }, player, ads.length > 1 ? vbar : null), info);
+}
+
+const main = document.getElementById("ads");
+[["New products", "15 products AdForge had never seen, picked before the run.", newSet],
+ ["Reruns", "7 products whose round-5 ads failed, run again on the current app.", reruns]].forEach(([t, p, list]) => {
+  const ok = list.filter(a => a.made).sort((x, y) => (y.key === BEST) - (x.key === BEST) || (x.late ? 1 : 0) - (y.late ? 1 : 0));
+  if (!ok.length) return;
+  main.append(el("div", { class: "set-title" }, el("h2", { text: t }), el("p", { text: p })));
+  ok.forEach(a => main.append(adBlock(a)));
+});
+if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+</script>
+
+</body>
+</html>
