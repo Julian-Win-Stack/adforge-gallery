@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="The same product links as Oct 20, made again on Nov 18, side by side.">
+<title>AdForge: Oct 20 vs now</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f4f5f3;--surface:#fff;--ink:#16181b;--muted:#5d636b;--line:#dadcd8;--accent:#2c46c9;--accent-soft:#e5e9fb;--pass:#1f6b3a;--pass-soft:#def0e3;--fail:#a3261c;--fail-soft:#f8e0dd;
+--display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;--body:"Public Sans","Segoe UI",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111316;--surface:#1a1d21;--ink:#eceef0;--muted:#9aa1aa;--line:#2c3036;--accent:#8ea0ff;--accent-soft:#232a4a;--pass:#7fd39a;--pass-soft:#1b3324;--fail:#ff9a8f;--fail-soft:#3a1f1c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111316;--surface:#1a1d21;--ink:#eceef0;--muted:#9aa1aa;--line:#2c3036;--accent:#8ea0ff;--accent-soft:#232a4a;--pass:#7fd39a;--pass-soft:#1b3324;--fail:#ff9a8f;--fail-soft:#3a1f1c;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--body)}
+.wrap{max-width:1000px;margin:0 auto;padding-block:40px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:36px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(30px,5vw,44px);line-height:1.05}
+h2{font-size:22px;line-height:1.2;overflow-wrap:anywhere}
+a{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.label{font:500 11px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+header{display:grid;gap:14px;max-width:66ch}header p{margin:0}
+.stats{display:flex;flex-wrap:wrap;gap:8px 22px;font:500 13px/1.4 var(--mono)}.stats b{font-weight:500;color:var(--accent)}
+.set-title{border-top:1px solid var(--line);padding-top:16px;display:grid;gap:4px}.set-title p{margin:0;color:var(--muted)}
+.row{display:grid;gap:12px;scroll-margin-top:16px}
+.meta a{font-size:13px;overflow-wrap:anywhere}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,280px));gap:20px}
+figure{margin:0;display:grid;gap:8px;align-content:start;min-width:0}
+figcaption{display:grid;gap:6px}
+video{width:100%;aspect-ratio:9/16;background:#000;border-radius:8px;display:block}
+.grade{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.pill{font:500 12px/1 var(--mono);padding:6px 10px;border-radius:999px;text-transform:uppercase;letter-spacing:.06em}
+.pill.pass{background:var(--pass-soft);color:var(--pass)}.pill.fail{background:var(--fail-soft);color:var(--fail)}.pill.none{background:var(--line);color:var(--muted)}
+.words{color:var(--muted);font-size:13px;font-style:italic;min-width:0;overflow-wrap:anywhere}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:620px){.pair{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}h2{font-size:19px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="label">AdForge · Oct 20 vs Nov 18, 2026</span>
+    <h1>Same links, a month later</h1>
+    <p>On Oct 20 I sent you these ads. On Nov 18 I gave the app the exact same product links again, just the link, nothing else. Left is Oct 20, right is today. Every grade is mine, by eye.</p>
+    <div class="stats" id="stats"></div>
+    <p class="words">Pass means I watched it and nothing broke: no wrong claim, no impossible motion, no made up product part. It doesn't mean the ad would sell.</p>
+  </header>
+  <main id="rows" style="display:grid;gap:36px"></main>
+  <footer>Blueland is left out: its product page is gone now (and on Oct 20 it made no ad). The Oct 20 page is still here as it was: <a href="./">Round 6 gallery</a>. Code and write-up: <a href="https://github.com/Julian-Win-Stack/adforge#readme" target="_blank" rel="noopener">github.com/Julian-Win-Stack/adforge</a>.</footer>
+</div>
+<script>
+const DATA = [{"key": "glow-recipe", "product": "Watermelon Glow Niacinamide Dew Drops", "url": "https://www.glowrecipe.com/products/watermelon-glow-niacinamide-dew-drops", "old": {"file": "media/r1-glow-recipe/ad-v2.mp4", "grade": "fail", "note": "all talking, don’t know why"}, "new": {"file": "media/now/glow-recipe.mp4", "grade": "pass", "note": ""}, "pin": -1}, {"key": "olipop", "product": "Vintage Cola", "url": "https://drinkolipop.com/products/vintage-cola", "old": {"file": "media/r3-olipop/ad-v1.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/olipop.mp4", "grade": "pass", "note": ""}, "pin": 1}, {"key": "rothys", "product": "The Point II", "url": "https://rothys.com/products/womens-pointed-toe-flat-tan-woven", "old": {"file": "media/r7-rothys/ad-v1.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/rothys.mp4", "grade": "pass", "note": ""}, "pin": 0}, {"key": "native-pet", "product": "Pumpkin Powder", "url": "https://nativepet.com/products/pumpkin-for-dogs", "old": {"file": "media/r11-native-pet/ad-v1.mp4", "grade": "pass", "note": "Nothing broke, but not a great ad."}, "new": {"file": "media/now/native-pet.mp4", "grade": "pass", "note": ""}, "pin": 0}, {"key": "cocolab", "product": "Cocofloss", "url": "https://cocolab.com/products/frosty-peppermint-dental-floss", "old": {"file": "media/r12b-cocolab/ad-v2.mp4", "grade": "fail", "note": ""}, "new": {"file": "media/now/cocolab.mp4", "grade": "pass", "note": ""}, "pin": -1}, {"key": "loop", "product": "Loop Experience 2", "url": "https://www.loopearplugs.com/products/experience", "old": {"file": "media/r14-loop/ad-v1.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/loop.mp4", "grade": "pass", "note": ""}, "pin": 0}, {"key": "peace-out", "product": "Pore Refining Strips", "url": "https://peaceoutskincare.com/products/pore-refining-strips", "old": {"file": "media/01-peace-out/ad-v1.mp4", "grade": null, "note": ""}, "new": {"file": "media/now/peace-out.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "krave", "product": "Matcha Hemp Hydrating Cleanser", "url": "https://kravebeauty.com/products/matcha-hemp-hydrating-cleanser", "old": {"file": "media/02-kravebeauty/ad-v2.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/krave.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "beautyblender", "product": "Beautyblender Original", "url": "https://beautyblender.com/products/beautyblender-original", "old": {"file": "media/03-beautyblender/ad-v1.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/beautyblender.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "wet-brush", "product": "Original Detangler", "url": "https://wetbrush.com/products/original-detangler-frost-black", "old": {"file": "media/04-wet-brush/ad-v1.mp4", "grade": "fail", "note": ""}, "new": {"file": "media/now/wet-brush.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "garject", "product": "Garject", "url": "https://us.dreamfarm.com/garject/", "old": {"file": "media/05-dreamfarm/ad-v1.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/garject.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "zulay", "product": "LUX Rechargeable Milk Frother", "url": "https://www.zulaykitchen.com/products/rechargeable-milk-frother-lux", "old": {"file": "media/06-zulay/ad-v1.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/zulay.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "gymreapers", "product": "Premium Lifting Straps", "url": "https://www.gymreapers.com/products/lifting-straps-premium-padded-weightlifting-straps-brown", "old": {"file": "media/07-gymreapers/ad-v1.mp4", "grade": "fail", "note": "no b roll. all talking. i found that this one had scraping problem for some reasons"}, "new": {"file": "media/now/gymreapers.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "dexas", "product": "Dexas MudBuster", "url": "https://www.amazon.com/dp/B084GYFS54", "old": {"file": "media/08-dexas/ad-v1.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/dexas.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "ezpz", "product": "Mini Mat", "url": "https://ezpzfun.com/products/mini-mat", "old": {"file": "media/09-ezpz/ad-v1.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/ezpz.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "logitech", "product": "Pebble Mouse 2 M350s", "url": "https://www.logitech.com/en-us/shop/p/pebble-2-m350s-wireless-mouse.910-006985", "old": {"file": "media/10-logitech/ad-v1.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/logitech.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "chipolo", "product": "Chipolo POP", "url": "https://chipolo.net/en-us/products/chipolo-pop", "old": {"file": "media/11-chipolo/ad-v1.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/chipolo.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "legion", "product": "Pulse", "url": "https://legionathletics.com/products/supplements/pulse-pre-workout/", "old": {"file": "media/12-legion/ad-v1.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/legion.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "mudwtr", "product": "Original Starter Kit plus PSL", "url": "https://mudwtr.com/products/original-starter-kit-psl-1", "old": {"file": "media/13-mudwtr/ad-v1.mp4", "grade": "pass", "note": ""}, "new": {"file": "media/now/mudwtr.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "force-of-nature", "product": "Force of Nature Starter Kit", "url": "https://www.forceofnatureclean.com/shop/starter-kit/", "old": {"file": "media/14-force-of-nature/ad-v1.mp4", "grade": "pass", "note": "but one talking scene failed. the presenter was holding a different shape of the bottle. i think the starting pic was different. and we cannot fix this in the owner notes as well. since this is talking scene"}, "new": {"file": "media/now/force-of-nature.mp4", "grade": null, "note": ""}, "pin": 0}, {"key": "pair-of-thieves", "product": "BOWO socks", "url": "https://pairofthieves.com/products/bowo-cushion-ankle-grey-socks-3-pack", "old": {"file": "media/15-pair-of-thieves/ad-v1.mp4", "grade": null, "note": ""}, "new": {"file": "media/now/pair-of-thieves.mp4", "grade": null, "note": ""}, "pin": 0}];
+const el=(t,a={},...k)=>{const n=document.createElement(t);for(const[x,v]of Object.entries(a)){if(x==="text")n.textContent=v;else if(v!=null)n.setAttribute(x,v)}for(const c of k)if(c)n.append(c);return n};
+const pill=g=>el("span",{class:"pill "+(g||"none"),text:g==="pass"?"Pass":g==="fail"?"Fail":"Not graded"});
+const side=(cap,s)=>el("figure",{},el("video",{src:s.file+"#t=0.1",controls:"",playsinline:"",preload:"metadata"}),
+  el("figcaption",{},el("span",{class:"label",text:cap}),el("div",{class:"grade"},pill(s.grade),s.note?el("span",{class:"words",text:"“"+s.note+"”"}):null)));
+const ok=g=>g==="pass";
+const group=r=>!r.new.grade?3:ok(r.new.grade)&&!ok(r.old.grade)?0:ok(r.new.grade)?1:2;
+const sets=[["Got better","Failed or not graded on Oct 20, passes now."],["Still good","Passed then, passes now."],["Still failing","Fails now. I'm showing these too."],["Not graded yet",""]];
+const n=(f)=>DATA.filter(f).length;
+const st=document.getElementById("stats");
+[[n(r=>ok(r.old.grade))+" of "+DATA.length,"passed on Oct 20"],(n(r=>r.new.grade)===DATA.length?[n(r=>ok(r.new.grade))+" of "+DATA.length,"pass now"]:[n(r=>ok(r.new.grade))+" of "+n(r=>r.new.grade),"graded so far pass now (grading in progress)"])].forEach(([v,k])=>st.append(el("span",{},el("b",{text:v})," "+k)));
+const main=document.getElementById("rows");
+sets.forEach(([t,p],i)=>{const list=DATA.filter(r=>group(r)===i).sort((a,b)=>a.pin-b.pin);if(!list.length)return;
+  main.append(el("div",{class:"set-title"},el("h2",{text:t+" · "+list.length}),p?el("p",{text:p}):null));
+  list.forEach(r=>main.append(el("article",{class:"row",id:r.key},
+    el("div",{class:"meta"},el("h2",{text:r.product}),el("a",{href:r.url,target:"_blank",rel:"noopener",text:r.url.replace(/^https?:\/\/(www\.)?/,"")})),
+    el("div",{class:"pair"},side("Oct 20",r.old),side("Nov 18",r.new)))));});
+if(location.hash)document.getElementById(location.hash.slice(1))?.scrollIntoView();
+</script>
+</body>
+</html>
