@@ -13,39 +13,151 @@
    "grade": "pass",
    "note": ""
   },
-  "pin": -1
+  "order": 0
  },
  {
-  "key": "olipop",
-  "product": "Vintage Cola",
-  "url": "https://drinkolipop.com/products/vintage-cola",
+  "key": "cocolab",
+  "product": "Cocofloss",
+  "url": "https://cocolab.com/products/frosty-peppermint-dental-floss",
   "old": {
-   "file": "media/r3-olipop/ad-v1.mp4",
+   "file": "media/r12b-cocolab/ad-v2.mp4",
+   "grade": "fail",
+   "note": ""
+  },
+  "new": {
+   "file": "media/now/cocolab.mp4",
+   "grade": "fail",
+   "note": ""
+  },
+  "order": 1
+ },
+ {
+  "key": "ezpz",
+  "product": "Mini Mat",
+  "url": "https://ezpzfun.com/products/mini-mat",
+  "old": {
+   "file": "media/09-ezpz/ad-v1.mp4",
    "grade": "pass",
    "note": ""
   },
   "new": {
-   "file": "media/now/olipop.mp4",
+   "file": "media/now/ezpz.mp4",
    "grade": "pass",
    "note": ""
   },
-  "pin": 1
+  "order": 2
  },
  {
-  "key": "rothys",
-  "product": "The Point II",
-  "url": "https://rothys.com/products/womens-pointed-toe-flat-tan-woven",
+  "key": "mudwtr",
+  "product": "Original Starter Kit plus PSL",
+  "url": "https://mudwtr.com/products/original-starter-kit-psl-1",
   "old": {
-   "file": "media/r7-rothys/ad-v1.mp4",
+   "file": "media/13-mudwtr/ad-v1.mp4",
    "grade": "pass",
    "note": ""
   },
   "new": {
-   "file": "media/now/rothys.mp4",
+   "file": "media/now/mudwtr.mp4",
    "grade": "pass",
    "note": ""
   },
-  "pin": 0
+  "order": 3
+ },
+ {
+  "key": "pair-of-thieves",
+  "product": "BOWO socks",
+  "url": "https://pairofthieves.com/products/bowo-cushion-ankle-grey-socks-3-pack",
+  "old": {
+   "file": "media/15-pair-of-thieves/ad-v1.mp4",
+   "grade": null,
+   "note": ""
+  },
+  "new": {
+   "file": "media/now/pair-of-thieves.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "order": 4
+ },
+ {
+  "key": "krave",
+  "product": "Matcha Hemp Hydrating Cleanser",
+  "url": "https://kravebeauty.com/products/matcha-hemp-hydrating-cleanser",
+  "old": {
+   "file": "media/02-kravebeauty/ad-v2.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "new": {
+   "file": "media/now/krave.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "order": 5
+ },
+ {
+  "key": "chipolo",
+  "product": "Chipolo POP",
+  "url": "https://chipolo.net/en-us/products/chipolo-pop",
+  "old": {
+   "file": "media/11-chipolo/ad-v1.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "new": {
+   "file": "media/now/chipolo.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "order": 6
+ },
+ {
+  "key": "dexas",
+  "product": "Dexas MudBuster",
+  "url": "https://www.amazon.com/dp/B084GYFS54",
+  "old": {
+   "file": "media/08-dexas/ad-v1.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "new": {
+   "file": "media/now/dexas.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "order": 7
+ },
+ {
+  "key": "legion",
+  "product": "Pulse",
+  "url": "https://legionathletics.com/products/supplements/pulse-pre-workout/",
+  "old": {
+   "file": "media/12-legion/ad-v1.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "new": {
+   "file": "media/now/legion.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "order": 8
+ },
+ {
+  "key": "logitech",
+  "product": "Pebble Mouse 2 M350s",
+  "url": "https://www.logitech.com/en-us/shop/p/pebble-2-m350s-wireless-mouse.910-006985",
+  "old": {
+   "file": "media/10-logitech/ad-v1.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "new": {
+   "file": "media/now/logitech.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "order": 9
  },
  {
   "key": "native-pet",
@@ -61,119 +173,23 @@
    "grade": "pass",
    "note": ""
   },
-  "pin": 0
+  "order": 10
  },
  {
-  "key": "cocolab",
-  "product": "Cocofloss",
-  "url": "https://cocolab.com/products/frosty-peppermint-dental-floss",
+  "key": "rothys",
+  "product": "The Point II",
+  "url": "https://rothys.com/products/womens-pointed-toe-flat-tan-woven",
   "old": {
-   "file": "media/r12b-cocolab/ad-v2.mp4",
-   "grade": "fail",
-   "note": ""
-  },
-  "new": {
-   "file": "media/now/cocolab.mp4",
-   "grade": "pass",
-   "note": ""
-  },
-  "pin": -1
- },
- {
-  "key": "loop",
-  "product": "Loop Experience 2",
-  "url": "https://www.loopearplugs.com/products/experience",
-  "old": {
-   "file": "media/r14-loop/ad-v1.mp4",
+   "file": "media/r7-rothys/ad-v1.mp4",
    "grade": "pass",
    "note": ""
   },
   "new": {
-   "file": "media/now/loop.mp4",
+   "file": "media/now/rothys.mp4",
    "grade": "pass",
    "note": ""
   },
-  "pin": 0
- },
- {
-  "key": "peace-out",
-  "product": "Pore Refining Strips",
-  "url": "https://peaceoutskincare.com/products/pore-refining-strips",
-  "old": {
-   "file": "media/01-peace-out/ad-v1.mp4",
-   "grade": null,
-   "note": ""
-  },
-  "new": {
-   "file": "media/now/peace-out.mp4",
-   "grade": null,
-   "note": ""
-  },
-  "pin": 0
- },
- {
-  "key": "krave",
-  "product": "Matcha Hemp Hydrating Cleanser",
-  "url": "https://kravebeauty.com/products/matcha-hemp-hydrating-cleanser",
-  "old": {
-   "file": "media/02-kravebeauty/ad-v2.mp4",
-   "grade": "pass",
-   "note": ""
-  },
-  "new": {
-   "file": "media/now/krave.mp4",
-   "grade": null,
-   "note": ""
-  },
-  "pin": 0
- },
- {
-  "key": "beautyblender",
-  "product": "Beautyblender Original",
-  "url": "https://beautyblender.com/products/beautyblender-original",
-  "old": {
-   "file": "media/03-beautyblender/ad-v1.mp4",
-   "grade": "pass",
-   "note": ""
-  },
-  "new": {
-   "file": "media/now/beautyblender.mp4",
-   "grade": null,
-   "note": ""
-  },
-  "pin": 0
- },
- {
-  "key": "wet-brush",
-  "product": "Original Detangler",
-  "url": "https://wetbrush.com/products/original-detangler-frost-black",
-  "old": {
-   "file": "media/04-wet-brush/ad-v1.mp4",
-   "grade": "fail",
-   "note": ""
-  },
-  "new": {
-   "file": "media/now/wet-brush.mp4",
-   "grade": null,
-   "note": ""
-  },
-  "pin": 0
- },
- {
-  "key": "garject",
-  "product": "Garject",
-  "url": "https://us.dreamfarm.com/garject/",
-  "old": {
-   "file": "media/05-dreamfarm/ad-v1.mp4",
-   "grade": "pass",
-   "note": ""
-  },
-  "new": {
-   "file": "media/now/garject.mp4",
-   "grade": null,
-   "note": ""
-  },
-  "pin": 0
+  "order": 11
  },
  {
   "key": "zulay",
@@ -186,122 +202,26 @@
   },
   "new": {
    "file": "media/now/zulay.mp4",
-   "grade": null,
+   "grade": "pass",
    "note": ""
   },
-  "pin": 0
+  "order": 12
  },
  {
-  "key": "gymreapers",
-  "product": "Premium Lifting Straps",
-  "url": "https://www.gymreapers.com/products/lifting-straps-premium-padded-weightlifting-straps-brown",
+  "key": "beautyblender",
+  "product": "Beautyblender Original",
+  "url": "https://beautyblender.com/products/beautyblender-original",
   "old": {
-   "file": "media/07-gymreapers/ad-v1.mp4",
+   "file": "media/03-beautyblender/ad-v1.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "new": {
+   "file": "media/now/beautyblender.mp4",
    "grade": "fail",
-   "note": "no b roll. all talking. i found that this one had scraping problem for some reasons"
-  },
-  "new": {
-   "file": "media/now/gymreapers.mp4",
-   "grade": null,
    "note": ""
   },
-  "pin": 0
- },
- {
-  "key": "dexas",
-  "product": "Dexas MudBuster",
-  "url": "https://www.amazon.com/dp/B084GYFS54",
-  "old": {
-   "file": "media/08-dexas/ad-v1.mp4",
-   "grade": "pass",
-   "note": ""
-  },
-  "new": {
-   "file": "media/now/dexas.mp4",
-   "grade": null,
-   "note": ""
-  },
-  "pin": 0
- },
- {
-  "key": "ezpz",
-  "product": "Mini Mat",
-  "url": "https://ezpzfun.com/products/mini-mat",
-  "old": {
-   "file": "media/09-ezpz/ad-v1.mp4",
-   "grade": "pass",
-   "note": ""
-  },
-  "new": {
-   "file": "media/now/ezpz.mp4",
-   "grade": null,
-   "note": ""
-  },
-  "pin": 0
- },
- {
-  "key": "logitech",
-  "product": "Pebble Mouse 2 M350s",
-  "url": "https://www.logitech.com/en-us/shop/p/pebble-2-m350s-wireless-mouse.910-006985",
-  "old": {
-   "file": "media/10-logitech/ad-v1.mp4",
-   "grade": "pass",
-   "note": ""
-  },
-  "new": {
-   "file": "media/now/logitech.mp4",
-   "grade": null,
-   "note": ""
-  },
-  "pin": 0
- },
- {
-  "key": "chipolo",
-  "product": "Chipolo POP",
-  "url": "https://chipolo.net/en-us/products/chipolo-pop",
-  "old": {
-   "file": "media/11-chipolo/ad-v1.mp4",
-   "grade": "pass",
-   "note": ""
-  },
-  "new": {
-   "file": "media/now/chipolo.mp4",
-   "grade": null,
-   "note": ""
-  },
-  "pin": 0
- },
- {
-  "key": "legion",
-  "product": "Pulse",
-  "url": "https://legionathletics.com/products/supplements/pulse-pre-workout/",
-  "old": {
-   "file": "media/12-legion/ad-v1.mp4",
-   "grade": "pass",
-   "note": ""
-  },
-  "new": {
-   "file": "media/now/legion.mp4",
-   "grade": null,
-   "note": ""
-  },
-  "pin": 0
- },
- {
-  "key": "mudwtr",
-  "product": "Original Starter Kit plus PSL",
-  "url": "https://mudwtr.com/products/original-starter-kit-psl-1",
-  "old": {
-   "file": "media/13-mudwtr/ad-v1.mp4",
-   "grade": "pass",
-   "note": ""
-  },
-  "new": {
-   "file": "media/now/mudwtr.mp4",
-   "grade": null,
-   "note": ""
-  },
-  "pin": 0
+  "order": 13
  },
  {
   "key": "force-of-nature",
@@ -314,25 +234,89 @@
   },
   "new": {
    "file": "media/now/force-of-nature.mp4",
-   "grade": null,
+   "grade": "fail",
    "note": ""
   },
-  "pin": 0
+  "order": 14
  },
  {
-  "key": "pair-of-thieves",
-  "product": "BOWO socks",
-  "url": "https://pairofthieves.com/products/bowo-cushion-ankle-grey-socks-3-pack",
+  "key": "gymreapers",
+  "product": "Premium Lifting Straps",
+  "url": "https://www.gymreapers.com/products/lifting-straps-premium-padded-weightlifting-straps-brown",
   "old": {
-   "file": "media/15-pair-of-thieves/ad-v1.mp4",
+   "file": "media/07-gymreapers/ad-v1.mp4",
+   "grade": "fail",
+   "note": "no b roll. all talking. i found that this one had scraping problem for some reasons"
+  },
+  "new": {
+   "file": "media/now/gymreapers.mp4",
+   "grade": "fail",
+   "note": ""
+  },
+  "order": 15
+ },
+ {
+  "key": "loop",
+  "product": "Loop Experience 2",
+  "url": "https://www.loopearplugs.com/products/experience",
+  "old": {
+   "file": "media/r14-loop/ad-v1.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "new": {
+   "file": "media/now/loop.mp4",
+   "grade": "fail",
+   "note": ""
+  },
+  "order": 16
+ },
+ {
+  "key": "peace-out",
+  "product": "Pore Refining Strips",
+  "url": "https://peaceoutskincare.com/products/pore-refining-strips",
+  "old": {
+   "file": "media/01-peace-out/ad-v1.mp4",
    "grade": null,
    "note": ""
   },
   "new": {
-   "file": "media/now/pair-of-thieves.mp4",
-   "grade": null,
+   "file": "media/now/peace-out.mp4",
+   "grade": "fail",
    "note": ""
   },
-  "pin": 0
+  "order": 17
+ },
+ {
+  "key": "wet-brush",
+  "product": "Original Detangler",
+  "url": "https://wetbrush.com/products/original-detangler-frost-black",
+  "old": {
+   "file": "media/04-wet-brush/ad-v1.mp4",
+   "grade": "fail",
+   "note": ""
+  },
+  "new": {
+   "file": "media/now/wet-brush.mp4",
+   "grade": "fail",
+   "note": ""
+  },
+  "order": 18
+ },
+ {
+  "key": "olipop",
+  "product": "Vintage Cola",
+  "url": "https://drinkolipop.com/products/vintage-cola",
+  "old": {
+   "file": "media/r3-olipop/ad-v1.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "new": {
+   "file": "media/now/olipop.mp4",
+   "grade": "pass",
+   "note": ""
+  },
+  "order": 19
  }
 ]
