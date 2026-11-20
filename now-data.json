@@ -29,7 +29,7 @@
   "old": {
    "file": "media/04-wet-brush/ad-v1.mp4",
    "grade": "fail",
-   "note": "“It's not doing anything. This is pointless.” “that is so AI like”"
+   "note": ""
   },
   "new": {
    "file": "media/now-fixed/wet-brush.mp4",
@@ -76,7 +76,7 @@
   "old": {
    "file": "media/14-force-of-nature/ad-v1.mp4",
    "grade": "pass",
-   "note": "but one talking scene failed. the presenter was holding a different shape of the bottle."
+   "note": ""
   },
   "new": {
    "file": "media/now-fixed/force-of-nature.mp4",
@@ -99,7 +99,7 @@
   "old": {
    "file": "media/r1-glow-recipe/ad-v2.mp4",
    "grade": "fail",
-   "note": "all talking, don’t know why"
+   "note": ""
   },
   "new": {
    "file": "media/now/glow-recipe.mp4",
@@ -115,7 +115,7 @@
   "old": {
    "file": "media/11-chipolo/ad-v1.mp4",
    "grade": "pass",
-   "note": "“kind of pointless tho... this proves nothing. just showing the map”"
+   "note": ""
   },
   "new": {
    "file": "media/now/chipolo.mp4",
@@ -211,7 +211,7 @@
   "old": {
    "file": "media/12-legion/ad-v1.mp4",
    "grade": "pass",
-   "note": "“the shaking motion is not natural”"
+   "note": ""
   },
   "new": {
    "file": "media/now/legion.mp4",
@@ -243,7 +243,7 @@
   "old": {
    "file": "media/r11-native-pet/ad-v1.mp4",
    "grade": "pass",
-   "note": "Nothing broke, but not a great ad."
+   "note": ""
   },
   "new": {
    "file": "media/now/native-pet.mp4",
@@ -291,7 +291,7 @@
   "old": {
    "file": "media/07-gymreapers/ad-v1.mp4",
    "grade": "fail",
-   "note": "no b roll. all talking."
+   "note": ""
   },
   "new": {
    "file": "media/now-fixed/gymreapers.mp4",
